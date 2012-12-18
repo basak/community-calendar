@@ -3,6 +3,7 @@
 from __future__ import print_function
 from __future__ import unicode_literals
 
+import argparse
 import codecs
 import sys
 
@@ -20,4 +21,7 @@ def merge(filenames):
 
 
 if __name__ == '__main__':
-    print(merge(sys.argv[1:]), end='')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('source_ics_file', nargs='+')
+    args = parser.parse_args()
+    print(merge(args.source_ics_file), end='')
