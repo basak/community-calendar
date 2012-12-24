@@ -10,19 +10,25 @@ import sys
 import vobject
 
 
+def merge_timezones(combined_calendar, calendar_with_timezones):
+    for timezone_item in calendar_with_timezones.vtimezone_list:
+        combined_calendar.add(timezone_item)
+
+
+def merge_events(combined_calendar, calendar_with_events):
+    for event_item in calendar_with_events.vevent_list:
+        combined_calendar.add(event_item)
+
+
 def merge(filenames, timezone_file):
     combined_calendar = vobject.iCalendar()
 
     with codecs.open(timezone_file, encoding='utf-8') as f:
-        toplevel = vobject.readOne(f)
-        for timezone_item in toplevel.vtimezone_list:
-            combined_calendar.add(timezone_item)
+        merge_timezones(combined_calendar, vobject.readOne(f))
 
     for filename in filenames:
         with codecs.open(filename, 'r', encoding='utf-8') as f:
-            toplevel = vobject.readOne(f)
-            for item in toplevel.vevent_list:
-                combined_calendar.add(item)
+            merge_events(combined_calendar, vobject.readOne(f))
 
     return combined_calendar.serialize()
 
