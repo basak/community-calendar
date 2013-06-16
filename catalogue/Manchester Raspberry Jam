@@ -4,7 +4,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:4@justgohome.co.uk
 DTSTAMP:20121215T185052Z
-SUMMARY:Raspberry Jam
+SUMMARY:Manchester Raspberry Jam
 LOCATION:36-40 Edge St, Manchester, M4 1HN
 ORGANIZER;CN=Ben Nuttall:MAILTO:ben@bennuttall.com
 DTSTART;TZID=Europe/London:20130112T100000
@@ -13,7 +13,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:5@justgohome.co.uk
 DTSTAMP:20130117T123810Z
-SUMMARY:Raspberry Jam
+SUMMARY:Manchester Raspberry Jam
 LOCATION:36-40 Edge St, Manchester, M4 1HN
 ORGANIZER;CN=Ben Nuttall:MAILTO:ben@bennuttall.com
 DTSTART;TZID=Europe/London:20130217T100000
@@ -22,7 +22,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:6@justgohome.co.uk
 DTSTAMP:20130408T154405Z
-SUMMARY:Raspberry Jam
+SUMMARY:Manchester Raspberry Jam
 LOCATION:36-40 Edge St, Manchester, M4 1HN
 ORGANIZER;CN=Ben Nuttall:MAILTO:ben@bennuttall.com
 DTSTART;TZID=Europe/London:20130413T100000
