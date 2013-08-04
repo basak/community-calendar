@@ -1,2 +1,2 @@
-[![Stories in Ready](http://badge.waffle.io/basak/community-calendar.png)](http://waffle.io/basak/community-calendar)  
+[![Stories in Ready](https://badge.waffle.io/basak/community-calendar.png)](http://waffle.io/basak/community-calendar)  
 # Community Calendar
